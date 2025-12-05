@@ -3,7 +3,7 @@ use ("ecommerce");
 // updating Documents
 
 
-//update one (updating single document)
+// update one (updating single document)
 
 // db.products.updateOne(
 //     { name: "Wireless Mouse"},
@@ -20,7 +20,7 @@ use ("ecommerce");
 // )
 
 
-//Using $push to Add to Arrays
+// Using $push to Add to Arrays
 
 // db.products.updateOne(
 //     { name: "Wireless Mouse"},
