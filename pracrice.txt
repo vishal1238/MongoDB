@@ -1,0 +1,11 @@
+create a database with name restaurant 
+create a collection - Menu
+insert the data into collection
+perform all operation
+
+
+-insert One, Many
+-updateOne, Many
+-sort
+-conditional (gt, lt, gte, lte)
+-find, projection, delete 
