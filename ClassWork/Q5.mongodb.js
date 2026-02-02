@@ -4,7 +4,7 @@ db.employees.find(
 
 
 db.employees.find(
-    { department: { $eq: "HR" } }
+    {department: { $eq: "HR" } }
 )
   
 //equals to
