@@ -45,3 +45,4 @@ db.products.updateMany(
 )
   
 db.products.deleteOne({name: "laptop"})
+
