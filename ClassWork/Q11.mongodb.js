@@ -5,18 +5,27 @@ db.employees.aggregate(
         {}
     ]
 )
+
 db.employees.aggregate(
     [
-        {
-            $match: {department: "HR"}
-        }
+        {$match: {department: "HR"}}
     ]
 )
 
 db.employees.aggregate(
     [
-        {
-            $match: {name: "HR"}
-        }
+        {$project: {_id: 0, name: 1}}
+    ]
+)
+
+db.employees.aggregate(
+    [
+        {$project: {_id: 0, department: 0}}
+    ]
+)
+
+db.employees.aggregate(
+    [
+        {$sort: {name: 1}}
     ]
 )
