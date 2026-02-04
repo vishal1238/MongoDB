@@ -122,3 +122,24 @@ db.employees.aggregate([
     },
   },
 ]);
+
+db.empDetails.insertOne({
+    empid:ObjectId("69803f09830a5baa37628ca2"),
+    city: "Hyderabad",
+    State: "Telangana"
+})
+
+db.employees.aggregate([
+    {$lookup: {
+      from: "orders",
+      localField: "_id",
+      foreignField: "empid",
+      as: "orders"
+    }},
+    {$lookup: {
+      from: "empDetails",
+      localField: "_id",
+      foreignField: "empid",
+      as: "empDetails"
+    }}
+])
