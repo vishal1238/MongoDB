@@ -41,3 +41,11 @@ rs.initiate({
 // db.customers.insertOne({_id: "c1", name: "John", balance: 1000})
 // db.customers.insertOne({_id: "c2", name: "Mike", balance: 1000})
 //db.customers.find()
+
+
+for (let i = 0; i <= 100; i++) {
+    db.users.insertOne({ name: `User ${i}`, age: 23 });
+}
+
+db.users.countdocuments()
+ 
